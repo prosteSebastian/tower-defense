@@ -1,0 +1,16 @@
+examples/simple_corner_map.txt
+130
+350
+30
+0
+12
+slowTower 0 0 1 1 100 1 4
+basic 4 2 3 1 100 1 1
+fireTower 8 2 5 4 100 1 2
+slowTower 9 0 1 1 100 1 4
+
+brum 10 1 5 10 10 1
+burn 1 5
+
+brum 20 1 5 10 13 1
+

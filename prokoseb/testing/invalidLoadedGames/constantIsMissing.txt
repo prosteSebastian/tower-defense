@@ -1,0 +1,9 @@
+examples/simple_corner_map.txt
+35
+350
+30
+0
+martin 8 2 3 4 500 1 1
+
+brum 20 1 5 10 14 1
+

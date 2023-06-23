@@ -1,0 +1,12 @@
+examples/planes.txt
+639
+350
+0
+4
+565
+slowTower 3 2 5 4 150 4 4
+fireTower 6 0 5 4 100 1 2
+martin 22 0 3 4 500 1 1
+fireTower 36 1 5 4 100 1 2
+basic 47 0 3 3 100 1 1
+

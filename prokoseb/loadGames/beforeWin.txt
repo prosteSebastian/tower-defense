@@ -1,0 +1,21 @@
+examples/archi_cafe.txt
+340
+341
+30
+4
+671
+basic 2 0 7 3 151 4 1
+slowTower 16 0 1 1 100 1 4
+martin 20 2 3 4 500 1 1
+weakTower 41 6 3 1 100 1 4
+martin 47 0 3 4 500 1 1
+fireTower 54 6 5 4 100 1 2
+
+pjepeno 6 -1 69 1 43 1
+burn 2 3
+shot 1 3
+slow 1 3
+weakness 1 3
+
+pjepeno 12 2 69 5 31 1
+

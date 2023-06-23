@@ -1,0 +1,11 @@
+examples/simple_corner_map.txt
+400
+5
+30
+3
+150
+weakTower 0 0 3 1 100 1 3
+weakTower 4 2 3 1 100 1 4
+weakTower 8 2 3 1 100 1 4
+weakTower 9 0 3 1 100 1 4
+

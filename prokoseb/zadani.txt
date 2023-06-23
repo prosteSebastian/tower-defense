@@ -1,0 +1,26 @@
+Tower Defense
+
+Jako semestrální práci jsem si vybral hru: "Tower Defense".
+Můj program bude implementovat:
+- načítání věží, nepřátel a hry z konfiguračního souboru
+- interakci věže s nepřítelem. Tedy to, že věž bude "útočit" neboli střílet po nepřátelích
+- u věží různé druhy střílení
+- u nepřátel schopnosti, jako třeba neviditelnost, větší odolnost vůči střelám, štít...
+- u nepřátel různé druhy průchodů mapou -> níže popsáno u aplikace polymorfismu
+- detekci vítězství a počítání skóre.
+   -> Počítání skóre budu dělat jako kombinaci počtu přežitých vln nepřátel a za zabití nepřátel.
+   -> Každý nepřítel bude mít svojí odměnu za zabití "bounty".
+   -> detekci vítězství budeme zaznamenávat podle životů naší základny
+- jednoduchou AI na posílání vln
+   -> u které bych chtěl, aby fungovala tak, ze bude mít "virtualni" počet peněz a podle naší síly (tedy počtu věží, lvl věží...)
+   bude posílat vhodné nepřátele ve vlnách
+- možnost si hru uložit a načíst rozehranou hru
+- jednoduché menu, ze kterého si budeme moci vybírat různé možnosti spuštění hry (nějaké demo hry, načtení her atd.)
+Hra bude fungovat tahově, tedy se jednou za X kol se bude čekat na vstup od uživatele.
+Jako uživatelské rozhraní jsem si pro jednoduchost zvolil konzoli.
+
+Využití polymorfismu:
+- u nepřátel různé styly procházení mapou -> tedy nějaký naivní průchod, efektivní (BFS) a například létání
+   ->(ve složce passages/passage.h -> abstraktní třída, regular.h -> zvedená třída, hloupý průchod)
+- druhy útoků u věží -> střílení na nejbližšího nepřítele, výstřel na všechny nepřítele v blízkosti a naváděná střela
+- schopnosti u nepřítel -> myšleno lepší odolnost, neviditelnost atd.

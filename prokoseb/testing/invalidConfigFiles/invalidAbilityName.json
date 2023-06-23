@@ -1,0 +1,174 @@
+{
+  "gameSettings" : {
+    "waveSettings" : {
+      "newWave" : 45,
+      "playerInput" : 30,
+      "spawnFrequency" : 8,
+      "moneyPerWave" : 100,
+      "scorePerWave" : 50,
+      "winOnWave" : 5
+    },
+    "aiSettings" : {
+      "bfsPathLimit" :3 ,
+      "towerPowerConstant" : 1000,
+      "hpBoost" : 2,
+      "speedBoost" : 0.5,
+      "dmgBoost" : 2
+    },
+    "towerSettings" : {
+      "dmgIncrease" : 4,
+      "rangeIncrease" : 1,
+      "costDmgIncrease" : 1.25,
+      "costRangeIncrease" : 1.1,
+      "killRewardDivision" : 2,
+      "sellValueDivision" : 2
+    },
+    "enemySettings" : {
+      "deathScoreDivision" : 2
+    },
+    "tileSymbols" : {
+        "path" : " ",
+        "towerPlacement" : "@",
+        "enemySpawnPoint" : "!",
+        "wall" : "#",
+        "base" : ">"
+        },
+    "gameRules" : {
+      "baseHp" : 350,
+      "baseMoney" : 500,
+      "maxTowerPlacement" : 12,
+      "maxEnemySpawn" : 4,
+      "maxWidth" : 90,
+      "maxHeight" : 10
+    }
+  },
+  "objects" : {
+    "towers" : {
+      "basic" : {
+        "symbol" : "B",
+        "range" : 1,
+        "damage" : 3,
+        "cost" : 100,
+        "color" : "yellow",
+        "attack": {
+            "type" : "closestAttack",
+            "reloadTime" : 1
+        },
+        "effects" : {
+          "shot" : 2
+        }
+      },
+      "fireTower" : {
+        "symbol" : "F",
+        "range" : 4,
+        "damage" : 2,
+        "cost" : 100,
+        "color" : "red",
+        "attack":{
+            "type" : "closestAttack",
+            "reloadTime" : 2
+        },
+        "effects" : {
+          "burn" : 3
+        }
+      },
+      "slowTower" : {
+        "symbol" : "S",
+        "range" : 1,
+        "damage" : 1,
+        "cost" : 100,
+        "color" : "green",
+        "attack" : {
+            "type" : "closestAttack",
+            "reloadTime" : 4
+        },
+        "effects" : {
+            "slow" : 2
+        }
+      },
+      "weakTower" : {
+        "symbol" : "W",
+        "range" : 1,
+        "damage" : 3,
+        "cost" : 100,
+        "color" : "gray",
+        "attack" : {
+            "type" : "closestAttack",
+            "reloadTime" : 4
+        },
+        "effects" : {
+          "weakness" : 2
+        }
+      },
+      "martin" : {
+        "symbol" : "M",
+        "range" : 4,
+        "damage" : 3,
+        "cost" : 500,
+        "color" : "blue",
+        "attack" : {
+            "type" : "closestAttack",
+            "reloadTime" : 1
+        },
+        "effects" : {
+          "shot" : 2,
+
+          "burn" : 3,
+
+          "slow" : 2,
+
+          "weakness" : 2
+        }
+      }
+    },
+    "enemies" : {
+      "pjepeno" : {
+        "symbol" : "P",
+        "health" : 15,
+        "speed" : 2,
+        "reward" : 69,
+        "damage" : 5,
+        "abilities" : {
+            "heal" : {
+              "cd" : 5,
+              "range" : 2,
+              "power" : 20
+            },
+          "speed" : {
+            "cd" : 5,
+            "range" : 2,
+            "power" : 1
+          }
+        }
+      },
+      "kubik" : {
+        "symbol" : "K",
+        "health" : 15,
+        "speed" : 2,
+        "reward" : 70,
+        "damage" : 5,
+        "abilities" : {
+            "heal" : {
+              "cd" : 5,
+              "range" : 2,
+              "power" : 10
+            }
+        }
+      },
+      "brum" : {
+        "symbol" : "C",
+        "health" : 20,
+        "speed" : 1,
+        "reward" : 5,
+        "damage" : 10,
+        "abilities" : {
+          "progtest" : {
+            "cd" : 10,
+            "range" : 2,
+            "power" : 1
+          }
+        }
+      }
+    }
+  }
+}
